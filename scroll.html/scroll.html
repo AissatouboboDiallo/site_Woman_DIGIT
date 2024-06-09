@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* Cible la barre de défilement verticale */
+  h3::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Style de la poignée de défilement */
+  h3::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+  }
+
+  /* Style de la piste de défilement */
+  h3::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  } 
+
+  /* Style du contenu pour montrer le débordement */
+  
+  /* la propriete "overflow" definit un scroll bar avec les valeurs "auto et scroll" 
+  il n'en crée pas avec "visible et hidden " mais affiche le tout avec visible et masque
+  ceux en dehors du cadre avec hidden*/
+  .content {
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+  }
+</style>
+</head>
+<body>
+
+<div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel arcu at odio convallis hendrerit. Nulla facilisi.</p>
+  <p>Phasellus facilisis sapien non hendrerit varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+  <p>Vivamus dignissim orci non orci gravida, vel ultrices neque auctor. Maecenas id arcu id nunc auctor varius at eu neque.</p>
+  <p>Integer vel est sit amet felis efficitur facilisis. Vestibulum non fringilla nulla, eu dignissim enim.</p>
+  <p>Proin sed tortor non ante eleifend eleifend. Vivamus sed ex odio. Aliquam erat volutpat.</p>
+  <p>Nulla facilisi. Donec non libero nec tortor feugiat bibendum. Nunc vel dui gravida, auctor elit nec, dictum velit.</p>
+  <p>Etiam vel leo vel metus elementum posuere. Curabitur dignissim ipsum a congue scelerisque. Nunc eget tellus sed mauris mattis bibendum.</p>
+  <p>Morbi in orci sit amet metus congue mattis in eu risus. Praesent a risus nec nulla viverra hendrerit.</p>
+    <h3 class="content"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel arcu at odio convallis hendrerit. Nulla facilisi.</p>
+      <p>Phasellus facilisis sapien non hendrerit varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      <p>Vivamus dignissim orci non orci gravida, vel ultrices neque auctor. Maecenas id arcu id nunc auctor varius at eu neque.</p>
+      <p>Integer vel est sit amet felis efficitur facilisis. Vestibulum non fringilla nulla, eu dignissim enim.</p>
+      <p>Proin sed tortor non ante eleifend eleifend. Vivamus sed ex odio. Aliquam erat volutpat.</p>
+      <p>Nulla facilisi. Donec non libero nec tortor feugiat bibendum. Nunc vel dui gravida, auctor elit nec, dictum velit.</p>
+      <p>Etiam vel leo vel metus elementum posuere. Curabitur dignissim ipsum a congue scelerisque. Nunc eget tellus sed mauris mattis bibendum.</p>
+      <p>Morbi in orci sit amet metus congue mattis in eu risus. Praesent a risus nec nulla viverra hendrerit.</p> </h3>
+</div>
+
+</body>
+</html>
